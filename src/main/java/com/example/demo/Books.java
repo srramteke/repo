@@ -12,9 +12,9 @@ public class Books {
     
 	
 	@Id
-	@Column(name="BookId")
+	@Column(name="BookID")
 	@GeneratedValue
-	private Integer BookId;
+	private Integer BookID;
 	
 	@Column(name="BookName")
 	private String BookName;
@@ -22,11 +22,11 @@ public class Books {
 	@Column(name="BookPrice")
 	private Integer BookPrice;
 	
-	public Integer getBookId() {
-		return BookId;
+	public Integer getBookID() {
+		return BookID;
 	}
-	public void setBookId(Integer bookId) {
-		BookId = bookId;
+	public void setBookID(Integer bookID) {
+		BookID = bookID;
 	}
 	public String getBookName() {
 		return BookName;
@@ -42,7 +42,7 @@ public class Books {
 	}
 	@Override
 	public String toString() {
-		return "Books [BookId=" + BookId + ", BookName=" + BookName + ", BookPrice=" + BookPrice + "]";
+		return "Books [BookID=" + BookID + ", BookName=" + BookName + ", BookPrice=" + BookPrice + "]";
 	}
 	
 }
